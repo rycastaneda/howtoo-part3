@@ -20,7 +20,7 @@ function Accordion({ items }) {
                         <img src={accordion.open ? "/up.svg" : "/down.svg"} />
                     </a>
                     <div className={"accordion-body " + (accordion.open ? 'open' : '')}>
-                        {accordion.content}
+                        <div>{accordion.content}</div>
                     </div>
                 </div>);
             })

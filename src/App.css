@@ -219,26 +219,28 @@ h1 {
   }
 
   .accordion-body {
-    max-height: 0;
     margin-bottom: 26px;
     background-color: white;
     color: black;
     line-height: 26px;
     /* 144.444% */
     letter-spacing: 0.36px;
-    transition: max-height 0.15s ease-out;
-    overflow: hidden;
+    display: grid;
+    transition: grid-template-rows 0.15s ease-out;
+    grid-template-rows: 0fr;
+    
+    > div {
+      overflow: hidden;
+    }
   }
 
-
   .accordion-body.open {
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 39px;
     padding-right: 39px;
-    max-height: none;
-    overflow: auto;
-    margin-bottom: 1rem;
   }
 }
 
