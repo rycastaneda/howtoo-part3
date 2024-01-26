@@ -1,9 +1,9 @@
 const Modal = ({ onClose }) => {
     return (
         <div className="modal-mask">
-            <div class="modal-container">
+            <div className="modal-container">
                 <div className="center">
-                    <div class="modal-body">
+                    <div className="modal-body">
                         <div className="center column">
                             <img src="/logo.svg" alt="" className="logo-image"/>
                             <div className="text">
